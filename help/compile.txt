@@ -1,0 +1,4 @@
+go build -o bin/app.exe src/main.go
+docker build .  
+
+docker run -p 8080:8080 d9f9cfefca9d637f6da1518ac24cd7e095b402f02c922832819f7ea992a7568f
