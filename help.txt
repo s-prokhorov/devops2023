@@ -1,0 +1,10 @@
+go mod init kbot
+go install github.com/spf13/cobra-cli
+cobra-cli init
+cobra-cli add version
+cobra-cli add kbot
+go run main.go
+go build -ldflags "-X=kbot/cmd.appVersion=v1.0.0" 
+./kbot.exe version
+
+go get gopkg.in/telebot.v3
